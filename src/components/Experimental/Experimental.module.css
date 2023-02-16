@@ -1,0 +1,10 @@
+.wrapper {
+  display: inline-block;
+}
+
+.wrapper svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
+  margin-top: calc(1em * var(--ifm-line-height-base) * .25);
+}

@@ -1,0 +1,40 @@
+---
+title: Track Viz Documentation
+---
+
+# Track Viz
+
+A web app to display roller derby situations in different perspectives.
+
+Why? Because we couldn't export tracks from NURDS. But there is a lot more functionality.
+
+## Features
+
+- [2D Track](docs/2d-track) with an underlying 1:1 scale in SVG coordinates (in meters)
+  - rotatable track in 90 degree steps
+  - 3 views: include the ref lane, exclude the ref lane, or just the start
+  - optional Skater annotations
+  - pack and engagement zone borders
+- [3D Track](docs/3d-track)
+  - different models of varying complexity
+  - different controls <experimental />
+  - optional textures
+  - VR mode on supporting devices <experimental />
+- [Library View mode](docs/library-view-mode)
+  - controls to select the sequence
+  - controls to step through the steps in the sequence
+- [Library Edit mode](docs/library-edit-mode)
+  - add/remove/reorder sequences of situations
+  - add descriptions for sequences and/or situations
+  - set which team it is written for
+- [Import/Export](docs/import-export)
+  - single situation
+  - sequences of situations (Library)
+- [Settings](docs/settings)
+  - team colors
+  - eyeheight and gamepad sensitivity (3D Track) <experimental />
+  - pack computation method (Pizza and Lasagna)
+
+Go to [documentation](docs/intro)
+
+Go to [app](https://trackviz.netlify.com)
