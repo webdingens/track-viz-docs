@@ -1,0 +1,53 @@
+---
+sidebar_position: 7
+---
+
+import menuImgUrl from "./images/menu.png";
+import menuTrack3DControlsImgUrl from "./images/menu-track3d-controls.png";
+
+# Menu
+
+<img src={menuImgUrl} alt="Menu" style={{ maxHeight: "500px" }} />
+
+## Editor Layout
+
+Switch between the following layouts:
+
+- Track: show the 2D Track only
+- 3D: show the 3D Track only
+- Track | 3D: show both 2D and 3D Track side by side
+- Track | Library Editor: show the 2D Track and Library Editor side by side
+
+## Track3D Controls
+
+<img
+  src={menuTrack3DControlsImgUrl}
+  alt="List of Track 3D control options"
+  style={{ maxHeight: "200px" }}
+/>
+
+Only visible when 3D Track is visible. Choose between different control modes.
+
+- First Person: enter this mode to walk around the track using a keyboard and mouse. (There is a decade old bug in Chrome, when you rotate over 360 degrees the screen might jump a bit. Depends on the system.)
+- Map: rotate around a green center, which is placed on the floor
+  - Drag: move the track around, thereby moving the center
+  - Ctrl + drag or right mouse drag: rotate around the center
+  - Scroll up / down: zoom in / out
+  - On touchscreens you can move with single finger drag, and zoom/rotate with pinch / double finger drag
+- Drag: coming from the map mode you can drag the skaters around on the track. <experimental />
+- Gamepad: try hooking up your gamepad. You can move/look with the analogue sticks and increase/decrease with the X / Y buttons (depending on the layout) <experimental />
+
+## Import / Export
+
+- Open Track: open a previously exported JSON Track Data file
+- Save Track (Save link as): Export the current Track as a JSON file. This is a link, so you can right click or hold tap and then choose "Save link as" to store the file and choose a filename. It will also download if clicked, but you can't choose the filename.
+
+## Library
+
+- Open Library: open a previously exported Library JSON file. This gives access to the Library Editor and Sequence Controls.
+- Close Library (when library is loaded): clears all sequences and descriptions from the current library.
+
+## ------
+
+- Documentation: Link to this documentation
+- Settings: opens the [Settings](./settings.md) modal
